@@ -30,7 +30,7 @@ Sí, existe un certificado opcional y muy limitado de pago que incluye:
 - 📄 **Revisión de tu CV** - Equipo de expertos revisan tu CV y te dan feedback
 - 🏢 **Workshop Presencial** - Entrada asegurada a los workshops de Barcelona y Madrid
 
-**Entra a https://jscamp.dev, inicia sesión y consigue acceso.**
+**Entra a [https://jscamp.dev](https://jscamp.dev), inicia sesión y consigue acceso.**
 
 ## 📚 Contenido del Bootcamp
 
