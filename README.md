@@ -1,8 +1,34 @@
 ![CleanShot 2025-10-01 at 20 11 30@2x](https://github.com/user-attachments/assets/b6ef8402-d367-4a99-b939-8f11dedf91d7)
 
-# 🚀 JSCAMP
+# 🚀 JSCamp InfoJobs
 
-**JSCAMP** es un bootcamp intensivo de JavaScript y desarrollo web full-stack diseñado para llevarte desde los fundamentos hasta las tecnologías más avanzadas del ecosistema JavaScript.
+Bienvenidos al bootcamp intensivo de JavaScript y desarrollo web full-stack diseñado para llevarte desde los fundamentos hasta las tecnologías más avanzadas del ecosistema JavaScript. Veremos HTML, CSS, JavaScript, TypeScript, Node.js, SQL, CI/CD y Docker.
+
+## 🎨 El Proyecto Práctico
+
+A lo largo de este bootcamp, construiremos un proyecto completo **desde cero y paso a paso**, aplicando todos los conocimientos de cada módulo.
+
+👉 [Ver diseño del proyecto](https://stitch.withgoogle.com/projects/7508115667617706440)
+
+Este proyecto te permitirá consolidar todo lo aprendido y tener una aplicación real en tu portafolio.
+
+## 📺 La Plataforma
+
+En **[JSCamp.dev](https://jscamp.dev)** encontrarás todos los videos y contenido del bootcamp para que puedas revisarlo cuando quieras. El registro es gratis.
+Los videos y materiales se irán subiendo **poco a poco** a medida que avancemos en el bootcamp.
+
+### ¿Tiene certificado?
+
+Sí, existe un certificado opcional y muy limitado de pago que incluye:
+
+- 🎓 **Certificado Digital** - Certifica tus logros en el bootcamp
+- 📝 **Seguimiento de Ejercicios** - Revisaremos y corregiremos tus ejercicios
+- 💬 **Canal Exclusivo en Discord** - Comunidad premium y soporte directo
+- 🎥 **Directos Exclusivos** - Clases de repaso exclusivas con dudas y preguntas
+- 📄 **Revisión de tu CV** - Equipo de expertos revisan tu CV y te dan feedback
+- 🏢 **Workshop Presencial** - Entrada asegurada a los workshops de Barcelona y Madrid
+
+**Entra a https://jscamp.dev, inicia sesión y consigue acceso.**
 
 ## 📚 Contenido del Bootcamp
 
@@ -67,17 +93,13 @@ Cada módulo contiene ejercicios prácticos y proyectos reales. Navega a la carp
 
 ```bash
 # Clona el repositorio
-git clone [URL_DEL_REPO]
+git clone git@github.com:midudev/jscamp.git
 
 # Navega al módulo que desees
 cd jscamp/00-html-css
 
 # ¡Comienza a aprender!
 ```
-
-## 📖 Diseño
-
-El diseño de este proyecto está basado en: [JSCAMP Design](https://stitch.withgoogle.com/projects/7508115667617706440)
 
 ---
 
