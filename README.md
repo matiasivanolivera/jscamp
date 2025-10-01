@@ -32,34 +32,26 @@ Sí, existe un certificado opcional y muy limitado de pago que incluye:
 
 ## 📚 Contenido del Bootcamp
 
-Este bootcamp está organizado en módulos progresivos que cubren todo el stack de JavaScript:
+- **00** - HTML & CSS
+- **01** - JavaScript
+- **02** - React
+- **03** - Estado Global y React Router
+- **04** - Node.js
+- **05** - TypeScript
+- **06** - SQL
+- **07** - CI/CD
+- **08** - Docker
 
-### 00 - HTML & CSS
-Fundamentos de desarrollo web: estructura semántica y estilos modernos.
+## 💻 Requisitos de Instalación
 
-### 01 - JavaScript
-Domina JavaScript desde cero: sintaxis, ES6+, programación funcional y asíncrona.
+Antes de comenzar, asegúrate de tener instalado el siguiente software:
 
-### 02 - React
-Aprende React y construye interfaces de usuario modernas y reactivas.
-
-### 03 - Estado global y React Router
-Manejo avanzado de estado y navegación en aplicaciones React.
-
-### 04 - Node.js
-Desarrollo backend con Node.js: servidores, APIs REST y más.
-
-### 05 - TypeScript
-Lleva tu JavaScript al siguiente nivel con tipado estático.
-
-### 06 - SQL
-Bases de datos relacionales y consultas SQL.
-
-### 07 - CI/CD
-Integración y despliegue continuos: automatiza tu flujo de trabajo.
-
-### 08 - Docker
-Containerización de aplicaciones con Docker.
+- **[Node.js](https://nodejs.org/)** (versión 18 o superior) - Runtime de JavaScript
+- **[Git](https://git-scm.com/)** - Control de versiones
+- **[Visual Studio Code](https://code.visualstudio.com/)** - Editor de código (recomendado)
+- **[Docker](https://www.docker.com/)** - Para el módulo de Docker
+- **Navegador moderno** - Chrome, Firefox, Edge o Safari actualizado
+- **Terminal** - Bash, Zsh o PowerShell
 
 ## 👨‍💻 Instructor
 
