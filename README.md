@@ -48,12 +48,13 @@ Sí, existe un certificado opcional y muy limitado de pago que incluye:
 
 Antes de comenzar, asegúrate de tener instalado el siguiente software:
 
-- **[Node.js](https://nodejs.org/)** (versión 18 o superior) - Runtime de JavaScript
-- **[Git](https://git-scm.com/)** - Control de versiones
-- **[Visual Studio Code](https://code.visualstudio.com/)** - Editor de código (recomendado)
-- **[Docker](https://www.docker.com/)** - Para el módulo de Docker
 - **Navegador moderno** - Chrome, Firefox, Edge o Safari actualizado
-- **Terminal** - Bash, Zsh o PowerShell
+- **[Visual Studio Code](https://code.visualstudio.com/)** - Editor de código (recomendado)
+- **[Extensión Live Preview](https://marketplace.visualstudio.com/items?itemName=ms-vscode.live-server)** - Extensión para ver HTML/CSS
+- **[Node.js](https://nodejs.org/)** (versión 20 o superior) - Runtime de JavaScript
+- **[Git](https://git-scm.com/)** - Control de versiones
+- **[Docker](https://www.docker.com/)** - Para el módulo de Docker
+- **[Terminal Warp](https://midu.link/warp)** - Terminal con IA y Agentes
 
 ## 👨‍💻 Instructor
 
@@ -61,7 +62,7 @@ Este bootcamp es impartido por **midudev**, desarrollador y creador de contenido
 
 ### 🌐 Redes Sociales
 
-- 🐦 **Twitter/X**: [@midudev](https://twitter.com/midudev)
+- 🐦 **X**: [@midudev](https://twitter.com/midudev)
 - 📺 **YouTube**: [@midudev](https://youtube.com/@midudev)
 - 🎮 **Twitch**: [midudev](https://twitch.tv/midudev)
 - 📸 **Instagram**: [@midu.dev](https://instagram.com/midu.dev)
