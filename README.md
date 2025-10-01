@@ -6,6 +6,8 @@ Bienvenidos al bootcamp intensivo de JavaScript y desarrollo web full-stack dise
 
 ## 🎨 El Proyecto Práctico
 
+![CleanShot 2025-10-01 at 20 26 08@2x](https://github.com/user-attachments/assets/d9abec4d-ac41-4962-845c-93006bfe768b)
+
 A lo largo de este bootcamp, construiremos un proyecto completo **desde cero y paso a paso**, aplicando todos los conocimientos de cada módulo.
 
 👉 [Ver diseño del proyecto](https://stitch.withgoogle.com/projects/7508115667617706440)
