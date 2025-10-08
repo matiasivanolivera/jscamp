@@ -1,3 +1,4 @@
 {
-    "livePreview.defaultPreviewPath": "/jscamp/00-html-css/busqueda.html"
+    "livePreview.defaultPreviewPath": "/jscamp/00-html-css/busqueda.html",
+    "github.gitAuthentication": true
 }
