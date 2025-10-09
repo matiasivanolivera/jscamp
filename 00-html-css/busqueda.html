@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es" class="theme-dark">
+
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -9,9 +10,10 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
-  
+
   <!-- No CSS incluido a pedido: practicarás con tu propia hoja -->
 </head>
+
 <body class="site">
   <div class="site_inner">
 
@@ -22,7 +24,8 @@
           <!-- Marca: puedes estilizar el SVG por clase .brand__logo -->
           <span class="brand_logo" aria-hidden="true">
             <svg viewBox="0 0 48 48" class="logo" xmlns="http://www.w3.org/2000/svg">
-              <path fill="currentColor" fill-rule="evenodd" d="M12.0799 24L4 19.2479L9.95537 8.75216L18.04 13.4961L18.0446 4H29.9554L29.96 13.4961L38.0446 8.75216L44 19.2479L35.92 24L44 28.7521L38.0446 39.2479L29.96 34.5039L29.9554 44H18.0446L18.04 34.5039L9.95537 39.2479L4 28.7521L12.0799 24Z"/>
+              <path fill="currentColor" fill-rule="evenodd"
+                d="M12.0799 24L4 19.2479L9.95537 8.75216L18.04 13.4961L18.0446 4H29.9554L29.96 13.4961L38.0446 8.75216L44 19.2479L35.92 24L44 28.7521L38.0446 39.2479L29.96 34.5039L29.9554 44H18.0446L18.04 34.5039L9.95537 39.2479L4 28.7521L12.0799 24Z" />
             </svg>
           </span>
           <span class="brand_name">DevJobs</span>
@@ -40,7 +43,9 @@
         <div class="header-actions">
           <a class="btn_btn--ghost" href="#" data-action="upload-cv">Subir CV</a>
           <button class="avatar" type="button" aria-label="Abrir menú de usuario">
-            <img class="avatar_img" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBeG7G_fClYlNDdKTzEHA670Uh9TsfTwHCNng2nJOHZCsw_jzXKbuYg-ldPUGFyi06-RD8U4HtIew9rpl5T8KZpJLMfjHDm4EzNUz8rmjZK31QJTHhMqTY3_Kb8A2X_2zq_sDsq_v05AiSRHLlDPcyX1NmEoPCfW01ygMJcjz3gb0lUUZO_9qQq67stmy6-p1WbZReGs7T6RvlsxS_vN6KZi9UyUHJ80dTs-NADdsMxt3pXS8dF07JN11dXZAZp-UdqyFt7glf9jmA" alt="Foto de perfil" />
+            <img class="avatar_img"
+              src="https://lh3.googleusercontent.com/aida-public/AB6AXuBeG7G_fClYlNDdKTzEHA670Uh9TsfTwHCNng2nJOHZCsw_jzXKbuYg-ldPUGFyi06-RD8U4HtIew9rpl5T8KZpJLMfjHDm4EzNUz8rmjZK31QJTHhMqTY3_Kb8A2X_2zq_sDsq_v05AiSRHLlDPcyX1NmEoPCfW01ygMJcjz3gb0lUUZO_9qQq67stmy6-p1WbZReGs7T6RvlsxS_vN6KZi9UyUHJ80dTs-NADdsMxt3pXS8dF07JN11dXZAZp-UdqyFt7glf9jmA"
+              alt="Foto de perfil" />
           </button>
         </div>
       </div>
@@ -50,7 +55,7 @@
     <main id="contenido" class="main" role="main">
       <div class="container">
 
-<!-- Hero -->
+        <!-- Hero -->
         <section class="hero" aria-labelledby="hero-title">
           <h1 id="hero-title" class="hero__title">Encuentra tu próximo trabajo</h1>
           <p class="hero_lead">Explora miles de oportunidades en el sector tecnológico.</p>
@@ -58,45 +63,50 @@
 
         <!-- Búsqueda y filtros -->
         <section class="search" aria-labelledby="search-title">
-          <h2 id="search-title" class="sr-only">Buscar empleos</h2>
-
           <form class="searchbar" role="search" aria-label="Buscar trabajos">
-            <label class="searchbar__label" for="q">Buscar</label>
-            <input id="q" name="q" class="searchbar__input" type="search" placeholder="Buscar trabajos, empresas o habilidades" />
-            <button class="searchbar__submit" type="submit" aria-label="Ejecutar búsqueda">🔍</button>
+            <input id="q" name="q" class="searchbar__input" type="search"
+              placeholder="Buscar trabajos, empresas o habilidades" />
+            <button class="searchbar__submit" type="submit" aria-label="Ejecutar búsqueda">
+              <svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+                <circle cx="11" cy="11" r="5" fill="none" stroke="currentColor" stroke-width="2" />
+                <line x1="21" y1="21" x2="16.65" y2="16.65" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+              </svg>
+            </button>
           </form>
 
           <form class="filters" aria-label="Filtros de búsqueda">
             <fieldset class="filters__group">
-              <legend class="sr-only">Filtros</legend>
-
+              
               <details class="filter">
                 <summary class="filter__summary">
                   <span class="filter__label">Tecnología</span>
                   <span class="filter__caret" aria-hidden="true">▾</span>
-                </summary>
-                <!-- aquí podrías insertar checkboxes de tecnologías -->
+                  </summary>
+                <div class="filter__panel"></div>                
               </details>
 
               <details class="filter">
                 <summary class="filter__summary">
                   <span class="filter__label">Ubicación</span>
                   <span class="filter__caret" aria-hidden="true">▾</span>
-                </summary>
+                  </summary>
+                <div class="filter__panel"></div>
               </details>
 
               <details class="filter">
                 <summary class="filter__summary">
                   <span class="filter__label">Tipo de contrato</span>
                   <span class="filter__caret" aria-hidden="true">▾</span>
-                </summary>
+                  </summary>
+                <div class="filter__panel"></div>
               </details>
 
               <details class="filter">
                 <summary class="filter__summary">
                   <span class="filter__label">Nivel de experiencia</span>
                   <span class="filter__caret" aria-hidden="true">▾</span>
-                </summary>
+                  </summary>
+                <div class="filter__panel"></div>
               </details>
             </fieldset>
           </form>
@@ -111,7 +121,8 @@
               <article class="jobcard" itemscope itemtype="https://schema.org/JobPosting">
                 <header class="jobcard__header">
                   <h3 class="jobcard__title" itemprop="title">Ingeniero de Software</h3>
-                  <a class="btn btn--primary jobcard__cta" href="#" itemprop="hiringOrganization" itemscope itemtype="https://schema.org/Organization">
+                  <a class="btn btn--primary jobcard__cta" href="#" itemprop="hiringOrganization" itemscope
+                    itemtype="https://schema.org/Organization" id="boton_importante">
                     <span>Aplicar</span>
                   </a>
                 </header>
@@ -123,7 +134,9 @@
                   <span itemprop="jobLocationType">Remoto</span>
                 </p>
                 <p class="jobcard__desc" itemprop="description">
-                  Buscamos un ingeniero de software con experiencia en desarrollo web y conocimientos en JavaScript, React y Node.js. El candidato ideal debe ser capaz de trabajar en equipo y tener buenas habilidades de comunicación.
+                  Buscamos un ingeniero de software con experiencia en desarrollo web y conocimientos en JavaScript,
+                  React y Node.js. El candidato ideal debe ser capaz de trabajar en equipo y tener buenas habilidades de
+                  comunicación.
                 </p>
               </article>
             </li>
@@ -132,7 +145,7 @@
               <article class="jobcard" itemscope itemtype="https://schema.org/JobPosting">
                 <header class="jobcard__header">
                   <h3 class="jobcard__title" itemprop="title">Analista de Datos</h3>
-                  <a class="btn btn--primary jobcard__cta" href="#"><span>Aplicar</span></a>
+                  <a class="btn btn--primary jobcard__cta" href="#" ><span>Aplicar</span></a>
                 </header>
                 <p class="jobcard__meta">
                   <span itemprop="hiringOrganization" itemscope itemtype="https://schema.org/Organization">
@@ -142,7 +155,8 @@
                   <span class="jobcard__location">Ciudad de México</span>
                 </p>
                 <p class="jobcard__desc" itemprop="description">
-                  Estamos buscando un analista de datos con experiencia en el manejo de grandes conjuntos de datos y herramientas de visualización. Se requiere conocimiento en SQL, Python y R.
+                  Estamos buscando un analista de datos con experiencia en el manejo de grandes conjuntos de datos y
+                  herramientas de visualización. Se requiere conocimiento en SQL, Python y R.
                 </p>
               </article>
             </li>
@@ -161,7 +175,8 @@
                   <span class="jobcard__location">Guadalajara</span>
                 </p>
                 <p class="jobcard__desc" itemprop="description">
-                  Buscamos un desarrollador de aplicaciones móviles con experiencia en iOS y/o Android. El candidato debe tener conocimientos en Swift, Kotlin y el desarrollo de interfaces de usuario.
+                  Buscamos un desarrollador de aplicaciones móviles con experiencia en iOS y/o Android. El candidato
+                  debe tener conocimientos en Swift, Kotlin y el desarrollo de interfaces de usuario.
                 </p>
               </article>
             </li>
@@ -180,7 +195,9 @@
                   <span itemprop="jobLocationType">Remoto</span>
                 </p>
                 <p class="jobcard__desc" itemprop="description">
-                  Estamos buscando un ingeniero de DevOps con experiencia en la gestión de infraestructuras en la nube, automatización de procesos y herramientas de integración continua. Se requiere conocimiento en AWS, Azure o GCP.
+                  Estamos buscando un ingeniero de DevOps con experiencia en la gestión de infraestructuras en la nube,
+                  automatización de procesos y herramientas de integración continua. Se requiere conocimiento en AWS,
+                  Azure o GCP.
                 </p>
               </article>
             </li>
@@ -211,4 +228,5 @@
 
   </div>
 </body>
+
 </html>
