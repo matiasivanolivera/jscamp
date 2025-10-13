@@ -5,7 +5,7 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>DevJobs — Encuentra tu próximo trabajo</title>
-  <link rel="stylesheet" href="busqueda.css">
+  <link rel="stylesheet" href="empleos.css">
   <!-- Opcional: tipografía (puedes quitarla si prefieres practicar 100% nativo) -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -61,58 +61,59 @@
           <p class="hero_lead">Explora miles de oportunidades en el sector tecnológico.</p>
         </section>
 
-      <div class="search-filters-container">  
-        <!-- Búsqueda y filtros -->
-        <section class="search" aria-labelledby="search-title">
-          <form class="searchbar" role="search" aria-label="Buscar trabajos">
-            <input id="q" name="q" class="searchbar__input" type="search"
-              placeholder="Buscar trabajos, empresas o habilidades" />
-            <button class="searchbar__submit" type="submit" aria-label="Ejecutar búsqueda">
-              <svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
-                <circle cx="11" cy="11" r="5" fill="none" stroke="currentColor" stroke-width="2" />
-                <line x1="21" y1="21" x2="16.65" y2="16.65" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
-              </svg>
-            </button>
-          </form>
+        <div class="search-filters-container">
+          <!-- Búsqueda y filtros -->
+          <section class="search" aria-labelledby="search-title">
+            <form class="searchbar" role="search" aria-label="Buscar trabajos">
+              <input id="q" name="q" class="searchbar__input" type="search"
+                placeholder="Buscar trabajos, empresas o habilidades" />
+              <button class="searchbar__submit" type="submit" aria-label="Ejecutar búsqueda">
+                <svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+                  <circle cx="11" cy="11" r="5" fill="none" stroke="currentColor" stroke-width="2" />
+                  <line x1="21" y1="21" x2="16.65" y2="16.65" stroke="currentColor" stroke-width="2"
+                    stroke-linecap="round" />
+                </svg>
+              </button>
+            </form>
 
-          <form class="filters" aria-label="Filtros de búsqueda">
-            <fieldset class="filters__group">
-              
-              <details class="filter">
-                <summary class="filter__summary">
-                  <span class="filter__label">Tecnología</span>
-                  <span class="filter__caret" aria-hidden="true">▾</span>
-                  </summary>
-                <div class="filter__panel"></div>                
-              </details>
+            <form class="filters" aria-label="Filtros de búsqueda">
+              <select name="tecnology" id="tecnology">
+                <option value="">Tecnología</option>
+                <option value="">JavaScript</option>
+                <option value="">Python</option>
+                <option value="">Java</option>
+                <option value="">React</option>
+                <option value="">Node.js</option>
+              </select>
 
-              <details class="filter">
-                <summary class="filter__summary">
-                  <span class="filter__label">Ubicación</span>
-                  <span class="filter__caret" aria-hidden="true">▾</span>
-                  </summary>
-                <div class="filter__panel"></div>
-              </details>
+              <select name="location" id="location">
+                <option value="">Ubicación</option>
+                <option value="">Remoto</option>
+                <option value="">CABA</option>
+                <option value="">Santa Fe</option>
+                <option value="">Rosario</option>
+                <option value="">Córdoba</option>
+              </select>
 
-              <details class="filter">
-                <summary class="filter__summary">
-                  <span class="filter__label">Tipo de contrato</span>
-                  <span class="filter__caret" aria-hidden="true">▾</span>
-                  </summary>
-                <div class="filter__panel"></div>
-              </details>
+              <select name="type-of-contract" id="type-of-contract">
+                <option value="">Tipo de Contrato</option>
+                <option value=""></option>
+                <option value=""></option>
+                <option value=""></option>
+                <option value=""></option>
+                <option value=""></option>
+              </select>
 
-              <details class="filter">
-                <summary class="filter__summary">
-                  <span class="filter__label">Nivel de experiencia</span>
-                  <span class="filter__caret" aria-hidden="true">▾</span>
-                  </summary>
-                <div class="filter__panel"></div>
-              </details>
-            </fieldset>
-          </form>
-        </section>
-      </div>
+              <select name="experience-lavel" id="experience-lavel">
+                <option value="">Nivel de Experiencia</option>
+                <option value="">Junior</option>
+                <option value="">Mid-lavel</option>
+                <option value="">Senior</option>
+                <option value="">Lead</option>
+              </select>
+            </form>
+          </section>
+        </div>
 
         <!-- Resultados -->
         <section class="results" aria-labelledby="results-title">
@@ -147,7 +148,7 @@
               <article class="jobcard" itemscope itemtype="https://schema.org/JobPosting">
                 <header class="jobcard__header">
                   <h3 class="jobcard__title" itemprop="title">Analista de Datos</h3>
-                  <a class="btn btn--primary jobcard__cta" href="#" ><span>Aplicar</span></a>
+                  <a class="btn btn--primary jobcard__cta" href="#"><span>Aplicar</span></a>
                 </header>
                 <p class="jobcard__meta">
                   <span itemprop="hiringOrganization" itemscope itemtype="https://schema.org/Organization">

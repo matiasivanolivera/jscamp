@@ -223,28 +223,37 @@
   cursor: pointer;
 }
 
-.filters__group {
-    border: 0;
-    display: flex;
-    flex-wrap: wrap;
-    gap: var(--chip-gap);
-    padding: 0;
-    align-items: center;
-    justify-content: flex-start;
-    margin-block: 12px;
+.filters {
+  display:flex; 
+  flex-wrap:nowrap; 
+  gap:12px;
+  justify-content: flex-start;
+  align-items: center;
+  overflow-x: auto;
+  padding: 10px 0;
+
+  select {
+    /*background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='20' height='20' viewBox='0 0 24 24' fill='none' stroke='%23cbd5e1' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'><path stroke='none' d='M0 0h24v24H0z' fill='none'/><path d='M4 11l8 3l8 -3' /></svg>");*/
+    background-repeat:no-repeat;
+    background-position: right 12px center;
+    background-size: 16px;
+    height: 40px;
+    width: max-content;
+    min-width: 0;
+    border: var(--border);
+    background-color: var(--input-bg);
+    color: var(--text-primary);
+    border-radius: 8px;
+    padding-inline: 10px 6px;
+    font-size: 0.95rem;
+    font-family: inherit;
+    cursor: pointer;
+    outline: none;
+    transition: border-color 0.2s, box-shadow 0.2s;
+  }
 }
 
-.filter {
-    position: relative;
-    display: inline-flex;
-    vertical-align: middle;
-    white-space: nowrap;
-    background-color: var(--input-bg);
-    border-radius: 8px;  
-    padding: 8px 16px;
-    cursor: pointer;
-    transition: background-color 0.2s, border-color 0.2s;
-}
+
 
 #boton_importante {
   background: var(--primary);
