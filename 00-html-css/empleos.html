@@ -77,39 +77,47 @@
             </form>
 
             <form class="filters" aria-label="Filtros de búsqueda">
-              <select name="tecnology" id="tecnology">
-                <option value="">Tecnología</option>
-                <option value="">JavaScript</option>
-                <option value="">Python</option>
-                <option value="">Java</option>
-                <option value="">React</option>
-                <option value="">Node.js</option>
+              <select name="technology" id="technology">
+                <div class="select-wrap">
+                  <option value="">Tecnología</option>
+                  <option value="">JavaScript</option>
+                  <option value="">Python</option>
+                  <option value="">Java</option>
+                  <option value="">React</option>
+                  <option value="">Node.js</option>
+                </div>
               </select>
 
               <select name="location" id="location">
-                <option value="">Ubicación</option>
-                <option value="">Remoto</option>
-                <option value="">CABA</option>
-                <option value="">Santa Fe</option>
-                <option value="">Rosario</option>
-                <option value="">Córdoba</option>
+                <div class="select-wrap">
+                  <option value="">Ubicación</option>
+                  <option value="">Remoto</option>
+                  <option value="">CABA</option>
+                  <option value="">Santa Fe</option>
+                  <option value="">Rosario</option>
+                  <option value="">Córdoba</option>
+                </div>
               </select>
 
               <select name="type-of-contract" id="type-of-contract">
-                <option value="">Tipo de Contrato</option>
-                <option value=""></option>
-                <option value=""></option>
-                <option value=""></option>
-                <option value=""></option>
-                <option value=""></option>
+                <div class="select-wrap">
+                  <option value="">Tipo de Contrato</option>
+                  <option value=""></option>
+                  <option value=""></option>
+                  <option value=""></option>
+                  <option value=""></option>
+                  <option value=""></option>
+                </div>
               </select>
 
-              <select name="experience-lavel" id="experience-lavel">
-                <option value="">Nivel de Experiencia</option>
-                <option value="">Junior</option>
-                <option value="">Mid-lavel</option>
-                <option value="">Senior</option>
-                <option value="">Lead</option>
+              <select name="experience-level" id="experience-level">
+                <div class="select-wrap">
+                  <option value="">Nivel de Experiencia</option>
+                  <option value="">Junior</option>
+                  <option value="">Mid-lavel</option>
+                  <option value="">Senior</option>
+                  <option value="">Lead</option>
+                </div>
               </select>
             </form>
           </section>
@@ -124,10 +132,7 @@
               <article class="jobcard" itemscope itemtype="https://schema.org/JobPosting">
                 <header class="jobcard__header">
                   <h3 class="jobcard__title" itemprop="title">Ingeniero de Software</h3>
-                  <a class="btn btn--primary jobcard__cta" href="#" itemprop="hiringOrganization" itemscope
-                    itemtype="https://schema.org/Organization" id="boton_importante">
-                    <span>Aplicar</span>
-                  </a>
+                  <button class="btn btn--primary jobcard__cta" href="#">Aplicar</button>
                 </header>
                 <p class="jobcard__meta">
                   <span itemprop="hiringOrganization" itemscope itemtype="https://schema.org/Organization">

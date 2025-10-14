@@ -233,10 +233,14 @@
   padding: 10px 0;
 
   select {
-    /*background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='20' height='20' viewBox='0 0 24 24' fill='none' stroke='%23cbd5e1' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'><path stroke='none' d='M0 0h24v24H0z' fill='none'/><path d='M4 11l8 3l8 -3' /></svg>");*/
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='22' height='22' viewBox='0 0 24 24' fill='none' stroke='%23cbd5e1' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'><path stroke='none' d='M0 0h24v24H0z' fill='none'/><path d='M4 11l8 3l8 -3' /></svg>");
     background-repeat:no-repeat;
-    background-position: right 12px center;
+    background-position: right 10px center;
     background-size: 16px;
+    box-sizing:border-box;
     height: 40px;
     width: max-content;
     min-width: 0;
@@ -244,17 +248,58 @@
     background-color: var(--input-bg);
     color: var(--text-primary);
     border-radius: 8px;
-    padding-inline: 10px 6px;
+    padding: 10px 34px 10px 10px;
     font-size: 0.95rem;
     font-family: inherit;
+    white-space: nowrap;
+    line-height: 1.2;
     cursor: pointer;
     outline: none;
     transition: border-color 0.2s, box-shadow 0.2s;
+
+    .select-wrap {
+      position: relative;
+      display: inline-block;
+    }
   }
 }
 
-
+#tecnology {
+  background: var(--primary-dark);
+}
 
 #boton_importante {
   background: var(--primary);
+}
+
+.results {
+  max-width: 960px;         /* opcional: ancho máx. */
+  margin: 0 auto 24px; 
+  box-sizing: border-box;
+  padding-inline: 20px;
+
+  h2 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    color: var(--text-primary);
+    }
+
+    ol {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+
+    button {
+      cursor: pointer;
+      padding: 10px 15px;
+      border-radius: 8px;
+      border: none;
+      background-color: var(--primary-hover);
+      color: var(--text-primary);
+      font-size: 1rem;
+      
+    }
 }
