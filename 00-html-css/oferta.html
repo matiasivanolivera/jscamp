@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="es" class="theme-dark">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <title>DevJobs — Ingeniero de Software Junior</title>
+
+  <link rel="stylesheet" href="oferta.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+</head>
+
+<body class="theme-dark">
+
+  <header class="site-header" role="banner">
+    <div class="container-header-bar">
+      <a class="brand" href="/">
+        <!-- Marca: puedes estilizar el SVG por clase .brand__logo -->
+        <span class="brand_logo" aria-hidden="true">
+          <svg viewBox="0 0 48 48" class="logo" xmlns="http://www.w3.org/2000/svg">
+            <path fill="currentColor" fill-rule="evenodd"
+              d="M12.0799 24L4 19.2479L9.95537 8.75216L18.04 13.4961L18.0446 4H29.9554L29.96 13.4961L38.0446 8.75216L44 19.2479L35.92 24L44 28.7521L38.0446 39.2479L29.96 34.5039L29.9554 44H18.0446L18.04 34.5039L9.95537 39.2479L4 28.7521L12.0799 24Z" />
+          </svg>
+        </span>
+        <span class="brand_name">DevJobs</span>
+      </a>
+
+      <nav class="primary-nav" aria-label="Principal">
+        <ul class="primary-nav_list">
+          <li><a class="primary-nav__link" href="#">Inicio</a></li>
+          <li><a class="primary-nav__link" href="#">Empleos</a></li>
+          <li><a class="primary-nav__link" href="#">Empresas</a></li>
+          <li><a class="primary-nav__link" href="#">Salarios</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-actions">
+        <a class="btn_btn--ghost" href="#" data-action="upload-cv">Subir CV</a>
+        <button class="avatar" type="button" aria-label="Abrir menú de usuario">
+          <img class="avatar_img"
+            src="https://lh3.googleusercontent.com/aida-public/AB6AXuBeG7G_fClYlNDdKTzEHA670Uh9TsfTwHCNng2nJOHZCsw_jzXKbuYg-ldPUGFyi06-RD8U4HtIew9rpl5T8KZpJLMfjHDm4EzNUz8rmjZK31QJTHhMqTY3_Kb8A2X_2zq_sDsq_v05AiSRHLlDPcyX1NmEoPCfW01ygMJcjz3gb0lUUZO_9qQq67stmy6-p1WbZReGs7T6RvlsxS_vN6KZi9UyUHJ80dTs-NADdsMxt3pXS8dF07JN11dXZAZp-UdqyFt7glf9jmA"
+            alt="Foto de perfil" />
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Landmark: contenido principal -->
+  <main id="main" class="site-main" tabindex="-1">
+    <div class="rail">
+      <!-- Migas de pan semánticas -->
+      <nav class="breadcrumb" aria-label="breadcrumb">
+        <ol class="breadcrumb__list">
+          <li class="breadcrumb__item"><a href="#">Empleos</a></li>
+          <li class="breadcrumb__sep" aria-hidden="true">/</li>
+          <li class="breadcrumb__item" aria-current="page">Ingeniero de Software Senior</li>
+        </ol>
+      </nav>
+
+      <!-- La oferta como artículo -->
+      <article class="job">
+        <header class="job__header">
+          <div class="job__heading">
+            <h1 class="job__title">Ingeniero de Software Senior</h1>
+            <small class="job__meta">
+              <span>Tech Solutions Inc.</span>
+              <span> | </span>
+              <span>Remoto</span>
+            </small >
+          </div>
+          <button type="button" class="btn btn--primary" id="apply-top">Aplicar ahora</button>
+        </header>
+
+        <section class="section">
+          <h2 id="desc-title" class="section__title">Descripción del puesto</h2>
+          <p class="section__text">
+            Tech Solutions Inc. está buscando un Ingeniero de Software Senior altamente motivado y experimentado para
+            unirse a nuestro equipo remoto. El candidato ideal tendrá una sólida formación en desarrollo de software,
+            con experiencia en el diseño, desarrollo e implementación de soluciones escalables y de alto rendimiento.
+            Serás responsable de liderar proyectos, mentorizar a ingenieros junior y colaborar con equipos
+            multifuncionales para entregar productos de alta calidad.
+          </p>
+        </section>
+
+        <section class="section">
+          <h2 id="resp-title" class="section__title">Responsabilidades</h2>
+          <ul class="list">
+            <li class="list__item">Diseñar, desarrollar y mantener aplicaciones web con tecnologías modernas.</li>
+            <li class="list__item">Colaborar con producto y diseño para definir y entregar nuevas características.</li>
+            <li class="list__item">Escribir código limpio, eficiente y bien documentado.</li>
+            <li class="list__item">Realizar code reviews y dar feedback constructivo al equipo.</li>
+          </ul>
+        </section>
+
+        <section class="section" aria-labelledby="req-title">
+          <h2 id="req-title" class="section__title">Requisitos</h2>
+          <ul class="list">
+            <li class="list__item">Licenciatura en Informática o campo relacionado.</li>
+            <li class="list__item">5+ años de experiencia en desarrollo de software.</li>
+            <li class="list__item">Experiencia con React/Angular/Vue u otros frameworks de JavaScript.</li>
+            <li class="list__item">Conocimiento de metodologías ágiles y control de versiones (Git).</li>
+          </ul>
+        </section>
+
+        <section class="section" aria-labelledby="about-title">
+          <h2 id="about-title" class="section__title">Acerca de la empresa</h2>
+          <p class="section__text">
+            Tech Solutions Inc. crea soluciones de software de vanguardia para distintas industrias. Fomentamos un
+            entorno colaborativo e inclusivo con oportunidades de crecimiento profesional, salarios competitivos y
+            beneficios integrales.
+          </p>
+        </section>
+
+        <footer class="job__footer">
+          <button type="button" class="btn btn--primary" id="apply-bottom">Aplicar ahora</button>
+        </footer>
+      </article>
+    </div>
+  </main>
+</body>
+
+</html>
