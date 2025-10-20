@@ -20,7 +20,7 @@
       <div class="container-header-bar">
         <a class="brand" href="/">
           <!-- Marca: puedes estilizar el SVG por clase .brand__logo -->
-          <span class="brand_logo" aria-hidden="true">
+          <span class="brand_logo">
             <svg viewBox="0 0 48 48" class="logo" xmlns="http://www.w3.org/2000/svg">
               <path fill="currentColor" fill-rule="evenodd"
                 d="M12.0799 24L4 19.2479L9.95537 8.75216L18.04 13.4961L18.0446 4H29.9554L29.96 13.4961L38.0446 8.75216L44 19.2479L35.92 24L44 28.7521L38.0446 39.2479L29.96 34.5039L29.9554 44H18.0446L18.04 34.5039L9.95537 39.2479L4 28.7521L12.0799 24Z" />
@@ -66,7 +66,7 @@
               <input id="q" name="q" class="searchbar__input" type="search"
                 placeholder="Buscar trabajos, empresas o habilidades" />
               <button class="searchbar__submit" type="submit" aria-label="Ejecutar búsqueda">
-                <svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+                <svg class="icon" viewBox="0 0 24 24">
                   <circle cx="11" cy="11" r="5" fill="none" stroke="currentColor" stroke-width="2" />
                   <line x1="21" y1="21" x2="16.65" y2="16.65" stroke="currentColor" stroke-width="2"
                     stroke-linecap="round" />
@@ -131,21 +131,19 @@
               <article class="jobcard" itemscope itemtype="https://schema.org/JobPosting">
                 <header class="jobcard__header">
                   <div class="header-container-1">
-                    <h3 class="jobcard__title" itemprop="title">Ingeniero de Software</h3>
-                    <p class="jobcard__meta">
-                      <span itemprop="hiringOrganization" itemscope itemtype="https://schema.org/Organization">
-                        <span itemprop="name">Tech Solutions Inc.</span>
-                      </span>
-                      <span aria-hidden="true"> | </span>
-                      <span itemprop="jobLocationType">Remoto</span>
-                    </p>
+                    <h3 class="jobcard__title">Ingeniero de Software</h3>
+                    <small class="jobcard__meta">
+                      <span>Tech Solutions Inc.</span>
+                      <span> | </span>
+                      <span>Remoto</span>
+                    </small>
                   </div>
 
-                  <button class="btn btn--primary jobcard__cta" href="#">Aplicar</button>
+                  <button href="#">Aplicar</button>
 
                 </header>
 
-                <p class="jobcard__desc" itemprop="description">
+                <p class="jobcard__desc">
                   Buscamos un ingeniero de software con experiencia en desarrollo web y conocimientos en JavaScript,
                   React y Node.js. El candidato ideal debe ser capaz de trabajar en equipo y tener buenas habilidades de
                   comunicación.
@@ -154,21 +152,19 @@
             </li>
 
             <li>
-              <article class="jobcard" itemscope itemtype="https://schema.org/JobPosting">
+              <article class="jobcard">
                 <header class="jobcard__header">
                   <div class="header-container-1">
-                    <h3 class="jobcard__title" itemprop="title">Analista de Datos</h3>
-                    <p class="jobcard__meta">
-                      <span itemprop="hiringOrganization" itemscope itemtype="https://schema.org/Organization">
-                        <span itemprop="name">Data Driven Co.</span>
-                      </span>
-                      <span aria-hidden="true"> | </span>
+                    <h3 class="jobcard__title">Analista de Datos</h3>
+                    <small class="jobcard__meta">
+                      <span>Data Driven Co.</span>
+                      <span> | </span>
                       <span class="jobcard__location">Ciudad de México</span>
-                    </p>
+                    </small>
                   </div>
-                  <button class="btn btn--primary jobcard__cta" href="#">Aplicar</button>
+                  <button href="#">Aplicar</button>
                 </header>
-                <p class="jobcard__desc" itemprop="description">
+                <p class="jobcard__desc">
                   Estamos buscando un analista de datos con experiencia en el manejo de grandes conjuntos de datos y
                   herramientas de visualización. Se requiere conocimiento en SQL, Python y R.
                 </p>
@@ -176,21 +172,19 @@
             </li>
 
             <li>
-              <article class="jobcard" itemscope itemtype="https://schema.org/JobPosting">
+              <article class="jobcard">
                 <header class="jobcard__header">
                   <div class="header-container-1">
-                    <h3 class="jobcard__title" itemprop="title">Desarrollador de Aplicaciones Móviles</h3>
-                    <p class="jobcard__meta">
-                      <span itemprop="hiringOrganization" itemscope itemtype="https://schema.org/Organization">
-                        <span itemprop="name">Mobile Apps Ltd.</span>
-                      </span>
-                      <span aria-hidden="true"> | </span>
+                    <h3 class="jobcard__title">Desarrollador de Aplicaciones Móviles</h3>
+                    <small class="jobcard__meta">
+                      <span>Mobile Apps Ltd</span>
+                      <span> | </span>
                       <span class="jobcard__location">Guadalajara</span>
-                    </p>
+                    </small>
                   </div>
-                  <button class="btn btn--primary jobcard__cta" href="#">Aplicar</button>
+                  <button href="#">Aplicar</button>
                 </header>
-                <p class="jobcard__desc" itemprop="description">
+                <p class="jobcard__desc">
                   Buscamos un desarrollador de aplicaciones móviles con experiencia en iOS y/o Android. El candidato
                   debe tener conocimientos en Swift, Kotlin y el desarrollo de interfaces de usuario.
                 </p>
@@ -198,21 +192,19 @@
             </li>
 
             <li>
-              <article class="jobcard" itemscope itemtype="https://schema.org/JobPosting">
+              <article class="jobcard">
                 <header class="jobcard__header">
                   <div class="header-container-1">
-                    <h3 class="jobcard__title" itemprop="title">Ingeniero de DevOps</h3>
-                    <p class="jobcard__meta">
-                      <span itemprop="hiringOrganization" itemscope itemtype="https://schema.org/Organization">
-                        <span itemprop="name">Cloud Services SA</span>
-                      </span>
-                      <span aria-hidden="true"> | </span>
-                      <span itemprop="jobLocationType">Remoto</span>
-                    </p>
+                    <h3 class="jobcard__title">Ingeniero de DevOps</h3>
+                    <small class="jobcard__meta">
+                      <span>Cloud Services SA</span>
+                      <span> | </span>
+                      <span>Remoto</span>
+                    </small>
                   </div>
-                  <button class="btn btn--primary jobcard__cta" href="#">Aplicar</button>
+                  <button href="#">Aplicar</button>
                 </header>
-                <p class="jobcard__desc" itemprop="description">
+                <p class="jobcard__desc">
                   Estamos buscando un ingeniero de DevOps con experiencia en la gestión de infraestructuras en la nube,
                   automatización de procesos y herramientas de integración continua. Se requiere conocimiento en AWS,
                   Azure o GCP.
