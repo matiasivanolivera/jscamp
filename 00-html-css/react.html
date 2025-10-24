@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="es" class="theme-dark">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  
+  <title>DevJobs — Encuentra tu próximo trabajo</title>
+  
+  <link rel="stylesheet" href="empleos.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+  <script type="module">
+    import React from 'https://esm.sh/react@18.2.0';
+    import ReactDOM from 'https://esm.sh/react-dom@18.2.0/client';
+  </script>
+
+
+</head>
+
+<body class="site">
+  <div class="site_inner">
+
+    <header class="site-header" role="banner">
+      <div class="container-header-bar">
+        <a class="brand" href="/">
+          <!-- Marca: puedes estilizar el SVG por clase .brand__logo -->
+          <span class="brand_logo">
+            <svg viewBox="0 0 48 48" class="logo" xmlns="http://www.w3.org/2000/svg">
+              <path fill="currentColor" fill-rule="evenodd"
+                d="M12.0799 24L4 19.2479L9.95537 8.75216L18.04 13.4961L18.0446 4H29.9554L29.96 13.4961L38.0446 8.75216L44 19.2479L35.92 24L44 28.7521L38.0446 39.2479L29.96 34.5039L29.9554 44H18.0446L18.04 34.5039L9.95537 39.2479L4 28.7521L12.0799 24Z" />
+            </svg>
+          </span>
+          <span class="brand_name">DevJobs</span>
+        </a>
+
+        <nav class="primary-nav" aria-label="Principal">
+          <ul class="primary-nav_list">
+            <li><a class="primary-nav__link" href="#">Inicio</a></li>
+            <li><a class="primary-nav__link" href="#">Empleos</a></li>
+            <li><a class="primary-nav__link" href="#">Empresas</a></li>
+            <li><a class="primary-nav__link" href="#">Salarios</a></li>
+          </ul>
+        </nav>
+
+        <div class="header-actions">
+          <a class="btn_btn--ghost" href="#" data-action="upload-cv">Subir CV</a>
+          <button class="avatar" type="button" aria-label="Abrir menú de usuario">
+            <img class="avatar_img"
+              src="https://lh3.googleusercontent.com/aida-public/AB6AXuBeG7G_fClYlNDdKTzEHA670Uh9TsfTwHCNng2nJOHZCsw_jzXKbuYg-ldPUGFyi06-RD8U4HtIew9rpl5T8KZpJLMfjHDm4EzNUz8rmjZK31QJTHhMqTY3_Kb8A2X_2zq_sDsq_v05AiSRHLlDPcyX1NmEoPCfW01ygMJcjz3gb0lUUZO_9qQq67stmy6-p1WbZReGs7T6RvlsxS_vN6KZi9UyUHJ80dTs-NADdsMxt3pXS8dF07JN11dXZAZp-UdqyFt7glf9jmA"
+              alt="Foto de perfil" />
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <!-- Contenido principal -->
+    <main id="contenido" class="main" role="main">
+      <div class="container">
+
+        <!-- Hero -->
+        <section class="hero" aria-labelledby="hero-title">
+          <h1 id="hero-title" class="hero__title">Encuentra tu próximo trabajo</h1>
+          <p class="hero_lead">Explora miles de oportunidades en el sector tecnológico.</p>
+        </section>
+
+        <div class="search-filters-container">
+          <!-- Búsqueda y filtros -->
+          <section class="search" aria-labelledby="search-title">
+            <form class="searchbar" role="search" aria-label="Buscar trabajos">
+              <input id="q" name="q" class="searchbar__input" type="search"
+                placeholder="Buscar trabajos, empresas o habilidades" />
+              <button class="searchbar__submit" type="submit" aria-label="Ejecutar búsqueda">
+                <svg class="icon" viewBox="0 0 24 24">
+                  <circle cx="11" cy="11" r="5" fill="none" stroke="currentColor" stroke-width="2" />
+                  <line x1="21" y1="21" x2="16.65" y2="16.65" stroke="currentColor" stroke-width="2"
+                    stroke-linecap="round" />
+                </svg>
+
+              </button>
+            </form>
+
+            <form class="filters">
+              <select name="technology" id="technology">
+                <div class="select-wrap">
+                  <option value="Tecnología">Tecnología</option>
+                  <option value="js">JavaScript</option>
+                  <option value="Python">Python</option>
+                  <option value="">Java</option>
+                  <option value="">React</option>
+                  <option value="">Node.js</option>
+                </div>
+              </select>
+
+              <select name="location" id="location">
+                <div class="select-wrap">
+                  <option value="">Ubicación</option>
+                  <option value="">Remoto</option>
+                  <option value="">CABA</option>
+                  <option value="">Santa Fe</option>
+                  <option value="">Rosario</option>
+                  <option value="">Córdoba</option>
+                </div>
+              </select>
+
+              <select name="type-of-contract" id="type-of-contract">
+                <div class="select-wrap">
+                  <option value="">Tipo de Contrato</option>
+                  <option value=""></option>
+                  <option value=""></option>
+                  <option value=""></option>
+                  <option value=""></option>
+                  <option value=""></option>
+                </div>
+              </select>
+
+              <select name="experience-level" id="experience-level">
+                <div class="select-wrap">
+                  <option value="">Nivel de Experiencia</option>
+                  <option value="">Junior</option>
+                  <option value="">Mid-lavel</option>
+                  <option value="">Senior</option>
+                  <option value="">Lead</option>
+                </div>
+              </select>
+            </form>
+          </section>
+        </div>
+
+        <!-- Resultados -->
+        <section class="results">
+          <h2 id="results-title" class="results__title">Resultados de búsqueda</h2>
+
+          <ol class="joblist" role="list">
+            <li>
+              <article class="jobcard">
+                <header class="jobcard__header">
+                  <div class="header-container-1">
+                    <h3 class="jobcard__title">Ingeniero de Software</h3>
+                    <small class="jobcard__meta">
+                      <span>Tech Solutions Inc.</span>
+                      <span> | </span>
+                      <span>Remoto</span>
+                    </small>
+                  </div>
+
+                  <button href="#">Aplicar</button>
+
+                </header>
+
+                <p class="jobcard__desc">
+                  Buscamos un ingeniero de software con experiencia en desarrollo web y conocimientos en JavaScript,
+                  React y Node.js. El candidato ideal debe ser capaz de trabajar en equipo y tener buenas habilidades de
+                  comunicación.
+                </p>
+              </article>
+            </li>
+
+            <li>
+              <article class="jobcard">
+                <header class="jobcard__header">
+                  <div class="header-container-1">
+                    <h3 class="jobcard__title">Analista de Datos</h3>
+                    <small class="jobcard__meta">
+                      <span>Data Driven Co.</span>
+                      <span> | </span>
+                      <span class="jobcard__location">Ciudad de México</span>
+                    </small>
+                  </div>
+                  <button href="#">Aplicar</button>
+                </header>
+                <p class="jobcard__desc">
+                  Estamos buscando un analista de datos con experiencia en el manejo de grandes conjuntos de datos y
+                  herramientas de visualización. Se requiere conocimiento en SQL, Python y R.
+                </p>
+              </article>
+            </li>
+
+            <li>
+              <article class="jobcard">
+                <header class="jobcard__header">
+                  <div class="header-container-1">
+                    <h3 class="jobcard__title">Desarrollador de Aplicaciones Móviles</h3>
+                    <small class="jobcard__meta">
+                      <span>Mobile Apps Ltd</span>
+                      <span> | </span>
+                      <span class="jobcard__location">Guadalajara</span>
+                    </small>
+                  </div>
+                  <button href="#">Aplicar</button>
+                </header>
+                <p class="jobcard__desc">
+                  Buscamos un desarrollador de aplicaciones móviles con experiencia en iOS y/o Android. El candidato
+                  debe tener conocimientos en Swift, Kotlin y el desarrollo de interfaces de usuario.
+                </p>
+              </article>
+            </li>
+
+            <li>
+              <article class="jobcard">
+                <header class="jobcard__header">
+                  <div class="header-container-1">
+                    <h3 class="jobcard__title">Ingeniero de DevOps</h3>
+                    <small class="jobcard__meta">
+                      <span>Cloud Services SA</span>
+                      <span> | </span>
+                      <span>Remoto</span>
+                    </small>
+                  </div>
+                  <button href="#">Aplicar</button>
+                </header>
+                <p class="jobcard__desc">
+                  Estamos buscando un ingeniero de DevOps con experiencia en la gestión de infraestructuras en la nube,
+                  automatización de procesos y herramientas de integración continua. Se requiere conocimiento en AWS,
+                  Azure o GCP.
+                </p>
+              </article>
+            </li>
+          </ol>
+
+          <!-- Paginación -->
+          <nav>
+            <ul class="pagination">
+              <a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-chevron-left"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M15 6l-6 6l6 6" /></svg></a>
+              <a class ="is-active" href="#">1</a>
+              <a href="#">2</a>
+              <a href="#">3</a>
+              <a href="#">4</a>
+              <a href="#">5</a>
+              <a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-chevron-right"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M9 6l6 6l-6 6" /></svg></a>
+            </ul>
+          </nav>
+        </section>
+
+      </div>
+    </main>
+
+    <footer class="site-footer" role="contentinfo">
+      <div class="container">
+        <p class="copyright">© DevJobs</p>
+      </div>
+    </footer>
+
+  </div>
+</body>
+
+</html>
