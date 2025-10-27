@@ -64,11 +64,11 @@
 
         <div class="search-filters-container">
           <!-- Búsqueda y filtros -->
-          <section class="search" aria-labelledby="search-title">
-            <form class="searchbar" role="search" aria-label="Buscar trabajos">
+          <section class="search">
+            <form class="searchbar" role="search" >
               <input id="q" name="q" class="searchbar__input" type="search"
                 placeholder="Buscar trabajos, empresas o habilidades" />
-              <button class="searchbar__submit" type="submit" aria-label="Ejecutar búsqueda">
+              <button class="searchbar__submit" type="submit">
                 <svg class="icon" viewBox="0 0 24 24">
                   <circle cx="11" cy="11" r="5" fill="none" stroke="currentColor" stroke-width="2" />
                   <line x1="21" y1="21" x2="16.65" y2="16.65" stroke="currentColor" stroke-width="2"
@@ -79,47 +79,47 @@
             </form>
 
             <form class="filters">
-              <select name="technology" id="technology">
-                <div class="select-wrap">
+              <select name="technology" id="filter-technology">
+                
                   <option value="Tecnología">Tecnología</option>
                   <option value="js">JavaScript</option>
                   <option value="Python">Python</option>
                   <option value="">Java</option>
                   <option value="">React</option>
                   <option value="">Node.js</option>
-                </div>
+                
               </select>
 
-              <select name="location" id="location">
-                <div class="select-wrap">
+              <select name="location" id="filter-location">
+                
                   <option value="">Ubicación</option>
-                  <option value="">Remoto</option>
-                  <option value="">CABA</option>
-                  <option value="">Santa Fe</option>
-                  <option value="">Rosario</option>
-                  <option value="">Córdoba</option>
-                </div>
+                  <option value="Remoto">Remoto</option>
+                  <option value="CABA">CABA</option>
+                  <option value="Santa Fe">Santa Fe</option>
+                  <option value="Rosario">Rosario</option>
+                  <option value="Córdoba">Córdoba</option>
+                
               </select>
 
-              <select name="type-of-contract" id="type-of-contract">
-                <div class="select-wrap">
+              <select name="type-of-contract" id="filter-type-of-contract">
+                
                   <option value="">Tipo de Contrato</option>
                   <option value=""></option>
                   <option value=""></option>
                   <option value=""></option>
                   <option value=""></option>
                   <option value=""></option>
-                </div>
+                
               </select>
 
-              <select name="experience-level" id="experience-level">
-                <div class="select-wrap">
+              <select name="experience-level" id="filter-experience-level">
+                
                   <option value="">Nivel de Experiencia</option>
                   <option value="">Junior</option>
                   <option value="">Mid-lavel</option>
                   <option value="">Senior</option>
                   <option value="">Lead</option>
-                </div>
+                
               </select>
             </form>
           </section>
@@ -129,9 +129,9 @@
         <section class="results">
           <h2 id="results-title" class="results__title">Resultados de búsqueda</h2>
 
-          <ol class="joblist" role="list">
+          <ol class="joblist">
             <li>
-              <article class="jobcard">
+              <article data-modalidad="Remoto" class="jobcard">
                 <header class="jobcard__header">
                   <div class="header-container-1">
                     <h3 class="jobcard__title">Ingeniero de Software</h3>
@@ -155,14 +155,14 @@
             </li>
 
             <li>
-              <article class="jobcard">
+              <article data-modalidad="CABA" class="jobcard">
                 <header class="jobcard__header">
                   <div class="header-container-1">
                     <h3 class="jobcard__title">Analista de Datos</h3>
                     <small class="jobcard__meta">
                       <span>Data Driven Co.</span>
                       <span> | </span>
-                      <span class="jobcard__location">Ciudad de México</span>
+                      <span class="jobcard__location">CABA</span>
                     </small>
                   </div>
                   <button class="button-apply-job">Aplicar</button>
@@ -175,14 +175,14 @@
             </li>
 
             <li>
-              <article class="jobcard">
+              <article data-modalidad="Santa Fe" class="jobcard">
                 <header class="jobcard__header">
                   <div class="header-container-1">
                     <h3 class="jobcard__title">Desarrollador de Aplicaciones Móviles</h3>
                     <small class="jobcard__meta">
                       <span>Mobile Apps Ltd</span>
                       <span> | </span>
-                      <span class="jobcard__location">Guadalajara</span>
+                      <span class="jobcard__location">Santa Fe</span>
                     </small>
                   </div>
                   <button class="button-apply-job">Aplicar</button>
@@ -195,14 +195,14 @@
             </li>
 
             <li>
-              <article class="jobcard">
+              <article data-modalidad="Rosario" class="jobcard">
                 <header class="jobcard__header">
                   <div class="header-container-1">
                     <h3 class="jobcard__title">Ingeniero de DevOps</h3>
                     <small class="jobcard__meta">
                       <span>Cloud Services SA</span>
                       <span> | </span>
-                      <span>Remoto</span>
+                      <span>Rosario</span>
                     </small>
                   </div>
                   <button class="button-apply-job">Aplicar</button>
@@ -211,6 +211,26 @@
                   Estamos buscando un ingeniero de DevOps con experiencia en la gestión de infraestructuras en la nube,
                   automatización de procesos y herramientas de integración continua. Se requiere conocimiento en AWS,
                   Azure o GCP.
+                </p>
+              </article>
+            </li>
+
+            <li>
+              <article data-modalidad="Córdoba" class="jobcard">
+                <header class="jobcard__header">
+                  <div class="header-container-1">
+                    <h3 class="jobcard__title">Diseñador UX/UI</h3>
+                    <small class="jobcard__meta">
+                      <span>Creative Minds</span>
+                      <span> | </span>
+                      <span>Córdoba</span>
+                    </small>
+                  </div>
+                  <button class="button-apply-job">Aplicar</button>
+                </header>
+                <p class="jobcard__desc">
+                  Buscamos un diseñador UX/UI con experiencia en la creación de interfaces intuitivas y atractivas.
+                  El candidato debe tener conocimientos en herramientas de diseño como Figma, Sketch o Adobe XD.
                 </p>
               </article>
             </li>
@@ -233,11 +253,11 @@
       </div>
     </main>
 
-    <footer class="site-footer" role="contentinfo">
-      <div class="container">
-        <p class="copyright">© DevJobs</p>
-      </div>
-    </footer>
+     <footer>
+    <small>&copy; 2025 DevJobs. Todos los derechos reservados.</small>
+  </footer>
+
+  <footer style="padding-bottom: 100px">
 
   </div>
 </body>
