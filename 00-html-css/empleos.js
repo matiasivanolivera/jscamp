@@ -1,4 +1,4 @@
-const fetch = require("nodemailer/lib/fetch")
+/* const fetch = require("nodemailer/lib/fetch") */
 
 const botones_aplicar = document.querySelectorAll('.button-apply-job')
 
@@ -13,7 +13,7 @@ const botones_aplicar = document.querySelectorAll('.button-apply-job')
 
 const joblistol = document.querySelector('.joblist')
 
-joblistol.addEventListener('click', function(event) {
+joblistol.addEventListener('click', function (event) {
     const element = event.target
 
     if (element.classList.contains('button-apply-job')) {
@@ -26,7 +26,7 @@ joblistol.addEventListener('click', function(event) {
 const filter = document.querySelector('#filter-location')
 const jobcards = document.querySelectorAll('.jobcard')
 
-filter.addEventListener('change', function() {
+filter.addEventListener('change', function () {
     const selectedLocation = filter.value
 
     jobcards.forEach(job => {
@@ -46,26 +46,31 @@ const conteiner_jobs = document.querySelector('.joblist')
 fetch("./data.json")
     .then(response => {
         return response.json();
-    }) 
-    .then((jobs) =>{
-        jobs.foreach(job => {
+    })
+    .then((jobs) => {
+        jobs.forEach(job => {
+           /*  console.log('tengo los resultados de jobs');
+            console.log(job); */
+
             const article = document.createElement('article')
-            article.classList.add('jobcard')
+            article.className = 'jobcard'
 
             article.dataset.technology = job.data.technology
             article.dataset.location = job.data.location
             article.dataset.modalidad = job.data.modalidad
-            article.dataset.typeOfContract = job.data.typeOfContract
+            /* article.dataset.typeOfContract = job.data.typeOfContract */
 
             article.innerHTML = `<div>
-            <h3 class="jobcard__title">${job.title}</h3>
+            <h3 class="jobcard__title">${job.titulo}</h3>
             <small class="jobcard__meta">
-            <span> ${job.company} | ${job.location} </span>
+            <span> ${job.empresa} | ${job.ubicacion} </span>
             </small>
-            <p> ${job.description} </p>
+            <p> ${job.descripcion} </p>
             
             </div>
             <button class="button-apply-job">Aplicar</button>`
+
+            conteiner_jobs.appendChild(article); 
 
         })
     });

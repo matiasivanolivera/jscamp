@@ -302,14 +302,29 @@
     color: var(--text-primary);
   }
 
-  ol li{
-    list-style: none;
-    display: flex;
-    flex-direction: column;
-    gap: 16px;
+  /*  .joblist {
+   
 
 
   }
+ */
+  
+
+
+
+
+.jobcard__header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.joblist {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  border: solid 2px var(--border);
+  border-radius: 8px;
 
   .jobcard__desc {
     color: var(--text-secondary);
@@ -344,23 +359,14 @@
   button:active {
     transform: scale(0.95);
   }
-
-  
-
-
 }
 
-
-
-
-.jobcard__header {
-  display: flex;
-  justify-content: space-between;
-}
-
-.joblist {
-  border: solid 2px var(--border);
-  border-radius: 8px;
+  .button-apply-job {
+    &.is-applied {
+      background: green;
+      pointer-events: none;
+    }
+  }
 }
 
 .jobcard {
@@ -415,12 +421,7 @@
   }
 }
 
-.button-apply-job {
-    &.is-applied {
-      background: green;
-      pointer-events: none;
-  }
-}
+
 
 footer {
   background-color: var(--background);
