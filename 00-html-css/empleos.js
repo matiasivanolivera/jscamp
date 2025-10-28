@@ -1,15 +1,4 @@
-/* const fetch = require("nodemailer/lib/fetch") */
-
 const botones_aplicar = document.querySelectorAll('.button-apply-job')
-
-/* botones_aplicar.forEach(boton => {
-    boton.addEventListener('click', () => {
-    boton.textContent = '¡Aplicado!'
-    boton.classList.add('is-applied')
-    boton.disabled = true
-});
-
-}) */
 
 const joblistol = document.querySelector('.joblist')
 
@@ -24,19 +13,16 @@ joblistol.addEventListener('click', function (event) {
 })
 
 const filter = document.querySelector('#filter-location')
-const jobcards = document.querySelectorAll('.jobcard')
+
 
 filter.addEventListener('change', function () {
+    const jobcards = document.querySelectorAll('.jobcard')
     const selectedLocation = filter.value
 
     jobcards.forEach(job => {
         const modalidad = job.dataset.modalidad
 
-        if (selectedLocation === '' || selectedLocation === modalidad) {
-            job.style.display = 'block'
-        } else {
-            job.style.display = 'none'
-        }
+        selectedLocation === '' || selectedLocation === modalidad ? 'block' : 'none'
     })
 })
 
@@ -55,20 +41,25 @@ fetch("./data.json")
             const article = document.createElement('article')
             article.className = 'jobcard'
 
-            article.dataset.technology = job.data.technology
-            article.dataset.location = job.data.location
+            article.dataset.tecnologia = job.data.tecnologia
+            article.dataset.ubicacion = job.data.ubicacion
             article.dataset.modalidad = job.data.modalidad
             /* article.dataset.typeOfContract = job.data.typeOfContract */
 
-            article.innerHTML = `<div>
-            <h3 class="jobcard__title">${job.titulo}</h3>
-            <small class="jobcard__meta">
-            <span> ${job.empresa} | ${job.ubicacion} </span>
-            </small>
-            <p> ${job.descripcion} </p>
-            
-            </div>
-            <button class="button-apply-job">Aplicar</button>`
+            article.innerHTML = `
+                <header class="jobcard__header">
+                    <div class="header-container-1">
+                        <h3 class="jobcard__title">${job.titulo}</h3>
+                        <small class="jobcard__meta">
+                            <span>${job.empresa}</span>
+                            <span> | </span>
+                            <span>${job.ubicacion}</span>
+                        </small>
+                    </div>
+                    <button class="button-apply-job">Aplicar</button>
+                </header>
+                <p class="jobcard__desc">${job.descripcion}</p>
+            `
 
             conteiner_jobs.appendChild(article); 
 
